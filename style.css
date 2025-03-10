@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    height: 25%;
+    border: 1px solid pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+#nav-left, #nav-bottom, #nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-left #logo {
+    border-radius: 100%;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  
+    align-items: center;
+    list-style: none;
+}
+
+#nav-links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#nav-links #dropdown {
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+}
+
+#nav-links a:hover {
+    color: teal;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+#nav-right #searchBar {
+    width: 100%;
+    height: 30px;
+    border: 1px solid black ;    
+    border-radius: 5%;
+}
+
+#nav-right #cart {
+    font-size: 20px;
+}
+
+#nav-right button {
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+
+}
+
+#heroSection {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding: 5%;
+}
+
+#TopHead {
+    width: 100%;
+    text-align: center;
+}
+
+#TopHead h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+#TopHead #Headpara {
+    font-size: 15px;
+    text-align: center;
+    width: 35%;
+    place-self: center;
+}
+
+#Product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+#Product .pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.pro img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 7px;
+}
