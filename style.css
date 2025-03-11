@@ -248,12 +248,77 @@ body {
 footer {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 5%;
+    border-top: 2px solid black;
 }
 
-footer #footer-left h1{
+#footer-left {
+    width: 40%;
+}
+
+#footer-left h1{
     font-size: 35px;
+    margin-bottom: 3%;
+}
+
+#footer-left p {
+    font-size: 18px;
+    text-align: justify ;
+}
+
+#footer-left #socialLinks {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin-top: 2%;
+}
+
+#socialLinks i {
+    font-size: 25px;
+}
+
+#socialLinks i:hover {
+    color: dodgerblue;
+}
+
+#footer-bottom {
+    width: 30%;
+    margin-left: 7%;
+}
+
+.headThree {
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+
+.foothead {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2%;
+}
+
+#footer-bottom  #footer-links {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px
+}
+
+#footer-links a {
+    color: black;
+}
+
+#footer-links a:hover {
+    color: dodgerblue;
+}
+
+#footer-right {
+    width: 30%;
 }
